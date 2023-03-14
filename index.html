@@ -6,6 +6,11 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>pagina de mati</title>
+  <meta
+  name="description"
+  content="En esta pagina estamos aprendiendo los fundamentos de HTML con el profe"
+    />
+    <link rel="stylesheet" href="assets/estilos.css">
 </head>
 
 <body>
@@ -26,6 +31,7 @@
     </pre>
   </p>
   <hr>
+
   <h2>Etiquetas semanticas estructurales</h2>
   <div>div es una etiqueta contenedora que no tiene semantica</div>
   <header>header - Cabecera de un sitio web</header>
@@ -47,8 +53,114 @@
     section - representa una seccion de contenido
     generico
   </section>
-  
+  <address> address - representa una direccion fisica</address>
   <hr>
+
+  <h2>Etiquetas de bloque vs etiquetas de linea</h2>
+  <div style="background-color: yellow;">
+    La etiqueta de bloque por excelencia es div, una etiqueta de bloque es aquella que
+    genera saltos de linea con sus etiquetas hermanas
+  </div>
+  <span style="background-color: greenyellow;">
+    La etiqueta de linea por excelencia es span, 
+    una etiqueta de linea solo ocupa el espacio necesario que tiene su contenido 
+  </span>
+  <hr>
+
+  <h2>Estilos CSS en html</h2>
+  <hr>
+
+  <h2>Imagenes</h2>
+  <img src="img/PNG_transparency_demonstration_1.png" alt="Dados png">
+  <img src="img/Cat03.jpg" alt="Gatito jpg">
+  <img src="img/Rotating_earth_(large).gif" alt="tierra gif rotando">
+  <img src="img/gatoSVG.svg" alt="Gato negro svg">
+  <hr>
+
+  <h2>SVG</h2>
+  <svg
+  width="24"
+  height="24"
+  viewBox="0 0 24 24"
+  fill="none"
+  xmlns="http://www.w3.org/2000/svg"
+>
+  <path
+    fill-rule="evenodd"
+    clip-rule="evenodd"
+    d="M5 7H19C19.5523 7 20 7.44771 20 8V16C20 16.5523 19.5523 17 19 17H5C4.44772 17 4 16.5523 4 16V8C4 7.44772 4.44772 7 5 7ZM2 8C2 6.34315 3.34315 5 5 5H19C20.6569 5 22 6.34315 22 8V16C22 17.6569 20.6569 19 19 19H5C3.34315 19 2 17.6569 2 16V8ZM10 9L14 12L10 15V9Z"
+    fill="currentColor"
+  />
+  </svg>
+  <hr>
+
+  <h2>Figuras</h2>
+  <figure>
+    <img src="img/PNG_transparency_demonstration_1.png" alt="dados png">
+    <figcaption>dados png</figcaption>
+  </figure>
+  <hr>
+
+  <h2>Listas Ordenadas</h2>
+  <h3> Las estaciones del año</h3>
+  <ol>
+    <li>Primavera</li>
+    <li>Verano</li>
+    <li>Otoño</li>
+    <li>Invierno</li>
+  </ol>
+  <ol start="3">
+    <li>Primavera</li>
+    <li>Verano</li>
+    <li>Otoño</li>
+    <li>Invierno</li>
+  </ol>
+  <ol reversed>
+    <li>Primavera</li>
+    <li>Verano</li>
+    <li>Otoño</li>
+    <li>Invierno</li>
+  </ol>
+  <ol type="I">
+    <li>Primavera</li>
+    <li>Verano</li>
+    <li>Otoño</li>
+    <li>Invierno</li>
+  </ol>
+  <hr>
+
+  <h2>Listas Desordenadas</h2>
+  <h3>Cosas por hacer:</h3>
+  <ul>
+    <li>Cosa 1</li>
+    <li>Cosa 2</li>
+    <li>Cosa 3</li>
+  </ul>
+  <ul type="circle">
+    <li>Cosa 1</li>
+    <li>Cosa 2</li>
+    <li>Cosa 3</li>
+  </ul>
+  <ul type="square">
+    <li>Cosa 1</li>
+    <li>Cosa 2</li>
+    <li>Cosa 3</li>
+  </ul>
+  <hr>
+
+  <h2>Lista de definicion</h2>
+  <dl>
+    <dt>html</dt>
+    <dd></dd>
+  </dl>
+
+  <h2>Scripts en html - siempre al final del body</h2>
+  <script>
+    console.log('hola estamos aprendiendo html')
+  </script>
+  <script src="assets/codigos.js"></script>
+
+
 </body>
 
-</html>`
+</html>
